@@ -30,12 +30,61 @@
 <div class="border border-3 rounded-3 p-2 m-2">
   <div>1. Have a paragraph & a toggle button, on click of the button control the visibility(Show/Hide) of the paragraph
   </div>
-  <h1>Helloooooooooooooooooooooooo</h1>
-  <button class="btn btn-primary">SHOW/HIDE</button>
+  <h1 [hidden]='flag'>Helloooooooooooooooooooooooo</h1>
+  <button class="btn btn-primary" (click)='flag = !flag'>{{ flag ? 'SHOW':'HIDE'}}</button>
 </div>
 
 <div class="border border-3 rounded-3 p-2 m-2">
   <div>2. Create a text-area with maxLength=100, as the user keeps typing display updated Remaining characters.</div>
-  <textarea maxlength="100"></textarea>
-  <div>Remaining Chars: 100</div>
+  <textarea maxlength="100" [(ngModel)]='msg'></textarea>
+  <div>{{msg}}</div>
+  <div>Remaining Chars: {{100 - msg.length}}</div>
+</div>
+
+<div class="border border-3 rounded-3 p-2 m-2">
+  <div>3. Create dropdown with state names, when user changes dropdown value, print the selected dropdown value in a
+    div.</div>
+  <select [(ngModel)]='selectedState'>
+    <option></option>
+    <option>Odisha</option>
+    <option>Bihar</option>
+    <option>Andhrapradesh</option>
+    <option>Karnataka</option>
+    <option>Tamilnadu</option>
+    <option>kerla</option>
+  </select>
+  <div>Selected state is: {{selectedState}}</div>
+</div>
+
+<div class="border border-3 rounded-3 p-2 m-2">
+  <div>4. have 2 inputBoxes, and a dropdown(+,-,*,/) and perform arithmetic operations</div>
+  <input type='number' [(ngModel)]='num1' />
+  <input type='number' [(ngModel)]='num2' />
+  <select [(ngModel)]='op'>
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+  </select>
+  <div>Result:: {{calculatedResult}}</div>
+  <button (click)=calculate()>Calculate</button>
+</div>
+
+<div class="border border-3 rounded-3 p-2 m-2">
+  <div>5. create a input box, toggle the type of that input box to (text/password)</div>
+  <input type="{{flag ? 'text' : 'password' }}" />
+  <button class="btn btn-primary mx-2" (click)="flag=!flag">Toggle</button>
+</div>
+
+<div class="border border-3 rounded-3 p-2 m-2">
+  <div>6. create a counter example with 3 controls(increment,decrement,reset)</div>
+  <h3>Count:: {{count}}</h3>
+  <button class="btn btn-secondary" (click)="count = count-1">Decrement</button>
+  <button class="btn btn-danger mx-2" (click)="count = 0">Reset</button>
+  <button class="btn btn-primary" (click)="count = count+1">Increment</button>
+</div>
+
+<div class="border border-3 rounded-3 p-2 m-2">
+  <div>Have a toggle button and control Dark/Light theme of a page.</div>
+  <button class="btn btn-primary" (click)='toggleTheme()'>{{ flag ? 'Light Theme':'Dark Theme'}}</button>
 </div>
