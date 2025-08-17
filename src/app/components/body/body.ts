@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Databinding } from '../databinding/databinding';
 
 @Component({
@@ -7,7 +7,8 @@ import { Databinding } from '../databinding/databinding';
     Databinding
   ],
   templateUrl: './body.html',
-  styleUrl: './body.css'
+  styleUrl: './body.css',
+  // encapsulation: ViewEncapsulation.Emulated
 })
 export class Body {
 

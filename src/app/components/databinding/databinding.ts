@@ -46,4 +46,9 @@ export class Databinding {
     }
   }
 
+  addResult = 0;
+  addition(num3: string, num4: string) {
+    this.addResult = +num3 + +num4;
+  }
+
 }
