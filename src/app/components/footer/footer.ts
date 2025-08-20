@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-footer',
   imports: [
-    MyModal
+    // MyModal
   ],
   templateUrl: './footer.html',
   styleUrl: './footer.css'
