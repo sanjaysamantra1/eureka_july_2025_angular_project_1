@@ -2,12 +2,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Numberonly } from '../../directives/numberonly';
 
 @Component({
   selector: 'app-directives',
   imports: [
     FormsModule,
-    CommonModule
+    CommonModule,
+    Numberonly
   ],
   templateUrl: './directives.html',
   styleUrl: './directives.css'

@@ -11,12 +11,12 @@ import { Demo1 } from '../demo1/demo1';
   selector: 'app-body',
   imports: [
     // Databinding,
-    // Directives
+    Directives
     // MyModal
     // UserList
     // EmployeeList
     // ProductList
-    Demo1
+    // Demo1
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
