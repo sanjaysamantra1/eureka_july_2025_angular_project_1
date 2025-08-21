@@ -4,13 +4,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
+import { Zoomout } from '../../directives/zoomout';
 
 @Component({
   selector: 'app-product-list',
   imports: [
     FontAwesomeModule,
     NgxPaginationModule,
-    FormsModule
+    FormsModule,
+    Zoomout
   ],
   templateUrl: './product-list.html',
   styleUrl: './product-list.css'

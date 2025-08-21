@@ -6,17 +6,19 @@ import { UserList } from '../user-list/user-list';
 import { EmployeeList } from '../employee-list/employee-list';
 import { ProductList } from '../product-list/product-list';
 import { Demo1 } from '../demo1/demo1';
+import { PipesDemo } from '../pipes-demo/pipes-demo';
 
 @Component({
   selector: 'app-body',
   imports: [
     // Databinding,
-    Directives
+    // Directives
     // MyModal
     // UserList
     // EmployeeList
     // ProductList
     // Demo1
+    PipesDemo
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
