@@ -7,6 +7,7 @@ import { EmployeeList } from '../employee-list/employee-list';
 import { ProductList } from '../product-list/product-list';
 import { Demo1 } from '../demo1/demo1';
 import { PipesDemo } from '../pipes-demo/pipes-demo';
+import { ParentDemo } from '../parent-demo/parent-demo';
 
 @Component({
   selector: 'app-body',
@@ -16,9 +17,10 @@ import { PipesDemo } from '../pipes-demo/pipes-demo';
     // MyModal
     // UserList
     // EmployeeList
-    // ProductList
+    ProductList
     // Demo1
-    PipesDemo
+    // PipesDemo
+    // ParentDemo
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
