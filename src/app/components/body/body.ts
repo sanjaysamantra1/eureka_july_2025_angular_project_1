@@ -9,6 +9,8 @@ import { Demo1 } from '../demo1/demo1';
 import { PipesDemo } from '../pipes-demo/pipes-demo';
 import { ParentDemo } from '../parent-demo/parent-demo';
 import { TrafficDemo } from '../traffic-demo/traffic-demo';
+import { Math1Demo } from '../math1-demo/math1-demo';
+import { Math2Demo } from '../math2-demo/math2-demo';
 
 @Component({
   selector: 'app-body',
@@ -22,7 +24,10 @@ import { TrafficDemo } from '../traffic-demo/traffic-demo';
     // Demo1
     // PipesDemo
     // TrafficDemo,
-    ParentDemo
+    // ParentDemo
+    Math1Demo,
+    Math2Demo
+    
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',

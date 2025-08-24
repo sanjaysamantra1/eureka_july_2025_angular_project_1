@@ -8,6 +8,7 @@ import { Component, SimpleChanges } from '@angular/core';
   inputs: ['a', 'b']
 })
 export class Child1Demo {
+  a: any;
   b: any;
 
   constructor() {
