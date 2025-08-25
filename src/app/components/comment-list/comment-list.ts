@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Comment } from '../../models/comment';
 
 @Component({
   selector: 'app-comment-list',
