@@ -11,6 +11,9 @@ import { ParentDemo } from '../parent-demo/parent-demo';
 import { TrafficDemo } from '../traffic-demo/traffic-demo';
 import { Math1Demo } from '../math1-demo/math1-demo';
 import { Math2Demo } from '../math2-demo/math2-demo';
+import { HttpDemo1 } from '../http-demo1/http-demo1';
+import { Products } from '../products/products';
+import { CommentList } from '../comment-list/comment-list';
 
 @Component({
   selector: 'app-body',
@@ -25,9 +28,11 @@ import { Math2Demo } from '../math2-demo/math2-demo';
     // PipesDemo
     // TrafficDemo,
     // ParentDemo
-    Math1Demo,
-    Math2Demo
-    
+    // Math1Demo,
+    // Math2Demo
+    // HttpDemo1
+    // Products
+    CommentList
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
