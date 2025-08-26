@@ -14,6 +14,7 @@ import { Math2Demo } from '../math2-demo/math2-demo';
 import { HttpDemo1 } from '../http-demo1/http-demo1';
 import { Products } from '../products/products';
 import { CommentList } from '../comment-list/comment-list';
+import { EmployeeCrud } from '../employee-crud/employee-crud';
 
 @Component({
   selector: 'app-body',
@@ -32,7 +33,8 @@ import { CommentList } from '../comment-list/comment-list';
     // Math2Demo
     // HttpDemo1
     // Products
-    CommentList
+    // CommentList
+    EmployeeCrud
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
