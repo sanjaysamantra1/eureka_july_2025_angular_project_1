@@ -15,6 +15,8 @@ import { HttpDemo1 } from '../http-demo1/http-demo1';
 import { Products } from '../products/products';
 import { CommentList } from '../comment-list/comment-list';
 import { EmployeeCrud } from '../employee-crud/employee-crud';
+import { ObservableDemo1 } from '../observable-demo1/observable-demo1';
+import { ObservableDemo2 } from '../observable-demo2/observable-demo2';
 
 @Component({
   selector: 'app-body',
@@ -34,7 +36,9 @@ import { EmployeeCrud } from '../employee-crud/employee-crud';
     // HttpDemo1
     // Products
     // CommentList
-    EmployeeCrud
+    // EmployeeCrud
+    // ObservableDemo1
+    ObservableDemo2
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
