@@ -17,6 +17,7 @@ import { CommentList } from '../comment-list/comment-list';
 import { EmployeeCrud } from '../employee-crud/employee-crud';
 import { ObservableDemo1 } from '../observable-demo1/observable-demo1';
 import { ObservableDemo2 } from '../observable-demo2/observable-demo2';
+import { SubjectDemo1 } from '../subject-demo1/subject-demo1';
 
 @Component({
   selector: 'app-body',
@@ -26,7 +27,7 @@ import { ObservableDemo2 } from '../observable-demo2/observable-demo2';
     // MyModal
     // UserList
     // EmployeeList
-    // ProductList
+    ProductList
     // Demo1
     // PipesDemo
     // TrafficDemo,
@@ -38,7 +39,8 @@ import { ObservableDemo2 } from '../observable-demo2/observable-demo2';
     // CommentList
     // EmployeeCrud
     // ObservableDemo1
-    ObservableDemo2
+    // ObservableDemo2
+    // SubjectDemo1
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
