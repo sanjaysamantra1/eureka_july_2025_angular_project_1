@@ -1,3 +1,4 @@
+import { SignalDemo } from './../signal-demo/signal-demo';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Databinding } from '../databinding/databinding';
 import { Directives } from '../directives/directives';
@@ -18,6 +19,8 @@ import { EmployeeCrud } from '../employee-crud/employee-crud';
 import { ObservableDemo1 } from '../observable-demo1/observable-demo1';
 import { ObservableDemo2 } from '../observable-demo2/observable-demo2';
 import { SubjectDemo1 } from '../subject-demo1/subject-demo1';
+import { SignalDemo2 } from '../signal-demo2/signal-demo2';
+import { FormDemo1 } from '../form-demo1/form-demo1';
 
 @Component({
   selector: 'app-body',
@@ -27,7 +30,7 @@ import { SubjectDemo1 } from '../subject-demo1/subject-demo1';
     // MyModal
     // UserList
     // EmployeeList
-    ProductList
+    // ProductList
     // Demo1
     // PipesDemo
     // TrafficDemo,
@@ -41,6 +44,9 @@ import { SubjectDemo1 } from '../subject-demo1/subject-demo1';
     // ObservableDemo1
     // ObservableDemo2
     // SubjectDemo1
+    // SignalDemo
+    // SignalDemo2
+    FormDemo1
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
