@@ -21,6 +21,8 @@ import { ObservableDemo2 } from '../observable-demo2/observable-demo2';
 import { SubjectDemo1 } from '../subject-demo1/subject-demo1';
 import { SignalDemo2 } from '../signal-demo2/signal-demo2';
 import { FormDemo1 } from '../form-demo1/form-demo1';
+import { TemplateDrivenForm } from '../template-driven-form/template-driven-form';
+import { ModelDrivenForm } from '../model-driven-form/model-driven-form';
 
 @Component({
   selector: 'app-body',
@@ -46,7 +48,9 @@ import { FormDemo1 } from '../form-demo1/form-demo1';
     // SubjectDemo1
     // SignalDemo
     // SignalDemo2
-    FormDemo1
+    // FormDemo1
+    // TemplateDrivenForm
+    ModelDrivenForm
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',

@@ -4,7 +4,7 @@ import { Cart } from '../cart/cart';
 @Component({
   selector: 'app-navbar',
   imports: [
-    Cart
+    // Cart
   ],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css'
