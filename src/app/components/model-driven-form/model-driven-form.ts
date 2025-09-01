@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-model-driven-form',
@@ -13,14 +13,15 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 })
 export class ModelDrivenForm {
   myForm: any;
-  constructor() {
+  constructor(private formBuilder: FormBuilder) {
   }
   ngOnInit() {
-    this.createMyForm();
+    // this.createMyFormUsingFormGroup();
+    this.createMyFormUsingFormBuilder();
   }
-  createMyForm() {
+  createMyFormUsingFormGroup() {
     this.myForm = new FormGroup({
-      firstName: new FormControl('Sachin', [Validators.required,Validators.minLength(5)]),
+      firstName: new FormControl('Sachin', [Validators.required, Validators.minLength(5)]),
       lastName: new FormControl('Tendulkar'),
       email: new FormControl(''),
       address: new FormGroup({
@@ -28,7 +29,19 @@ export class ModelDrivenForm {
         state: new FormControl(''),
         pincode: new FormControl('')
       })
-    },{ updateOn: 'blur' });
+    }, { updateOn: 'change' });
+  }
+  createMyFormUsingFormBuilder() {
+    this.myForm = this.formBuilder.group({
+      firstName: ['Sachin', [Validators.required]],
+      lastName: ['Tendulkar', [Validators.required]],
+      email: ['sachin@gmail.com', [Validators.required]],
+      address: this.formBuilder.group({
+        city: [],
+        state: [],
+        pincode: []
+      })
+    })
   }
 
   submitMyForm(formData: any) {
