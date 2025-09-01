@@ -24,10 +24,13 @@ import { FormDemo1 } from '../form-demo1/form-demo1';
 import { TemplateDrivenForm } from '../template-driven-form/template-driven-form';
 import { ModelDrivenForm } from '../model-driven-form/model-driven-form';
 import { DynamicForm } from '../dynamic-form/dynamic-form';
+import { PasswordGenerator } from '../password-generator/password-generator';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-body',
   imports: [
+    RouterOutlet
     // Databinding,
     // Directives
     // MyModal
@@ -52,7 +55,8 @@ import { DynamicForm } from '../dynamic-form/dynamic-form';
     // FormDemo1
     // TemplateDrivenForm
     // ModelDrivenForm
-    DynamicForm
+    // DynamicForm
+    // PasswordGenerator
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
